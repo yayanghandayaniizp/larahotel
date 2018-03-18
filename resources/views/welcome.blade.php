@@ -58,7 +58,7 @@
         <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
         <h1 class="text-uppercase mb-0">Start Bootstrap</h1>
         <hr class="star-light">
-        <h2 class="font-weight-light mb-0">Web Developer - Graphic Artist - User Experience Designer</h2>
+        <h2 class="font-weight-light mb-0">Web Developer - Graphic Artist - User Experience </h2>
       </div>
     </header>
 
@@ -125,7 +125,29 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
+              
+              <div class="row">
+                @php
+                $hotels= App\hotel::all()
+                @endphp
+                @foreach ($hotels as $data)
+                  <div class="col-md-4">
+                    <div class="jumbotron top-space">
+                      <img src="{{asset('/img/'.$data->gambar.'')}} " width="110" height="110">
+                      <p class="card-text"><?php echo 'Rp.'. number_format($data->harga_sewa)?> /Hari </p>
+                      <div class="card-title">
+                        
+                        <button type="button" class="btn btn-flat btn-info btn-small" data-toggle="Modal" data-target="#myModal">{{ $data->merk_kamera }}</button>
+                      </div>
+                        <p class="card-text"> {{ $data->deskripsi }} </p>
+                    </div>
+                  </div>
+                  @endforeach
+                  </div>
+                  <center>
+                      {!!$kamera->links()!!
+              </center>
+
             </a>
           </div>
         </div>

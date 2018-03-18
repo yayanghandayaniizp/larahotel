@@ -12,8 +12,8 @@
 			<thead>
 				<tr>
 					<th>No</th>
-					<th>Nama hotel</th>
 					<th>No Kamar</th>
+					<th>Nama hotel</th>
 					<th>Tanggal Masuk</th>
 					<th>Tanggal Keluar</th>
 				</tr>
@@ -23,11 +23,10 @@
 				@foreach($laporan as $data)
 				<tr>
 					<td>{{$no++}}</td>
-					<td>{{$data->id}}</td>
-					<td>{{$data->check_in->tgl_masuk}}</td>
-					<td>{{$data->check_in->tgl_keluar}}</td>
-					<td>{{$data->hotel->nama}}</td>
 					<td>{{$data->hotel->no_kamar}}</td>
+					<td>{{$data->hotel->nama}}</td>
+					<td>{{$data->booking->check_in}}</td>
+					<td>{{$data->booking->check_out}}</td>
 					<td>
 					</td>
 					<td>

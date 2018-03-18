@@ -11,7 +11,7 @@
 			{{csrf_field()}}
 			<div class="form-group">
 				<label class="control-lable">Nama Hotel</label>
-				<select class="form-control" name="hotel_id">
+				<select class="form-control" name="nama">
 					@foreach($hotel as $data)
 					<option value="{{$data->id}}">{{$data->nama}} | No Kamar : {{$data->no_kamar}}</option>
 					@endforeach

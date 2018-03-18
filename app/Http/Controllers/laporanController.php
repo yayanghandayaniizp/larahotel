@@ -33,10 +33,24 @@ class laporanController extends Controller
     public function create()
     {
         //
-        $laporan=laporan::all();
+        $laporan=booking::all();
         $hotel=hotel::all();
         return view('laporan.create', compact('laporan','hotel'));
+
+         }
+
+    public function downloadPDF(Request $request){
+        $a = $request->a; 
+        $b = $request->b;
+        $penjualan1 = Transaksi::whereBetween('created_at', [$a, $b])->get(); 
+        $sum = $penjualan1->sum('total');
+      $user = Transaksi::all();
+
+      $pdf = PDF::loadView('laporan.pdf', compact('user','a','b','sum'));
+      return $pdf->download('laporan.pdf');
+
     }
+
 
     /**
      * Store a newly created resource in storage.
@@ -47,6 +61,13 @@ class laporanController extends Controller
     public function store(Request $request)
     {
         //
+        $laporan = new laporan;
+        $laporan->hotel_id =$request->hotel_id;
+        $laporan->booking_id = $request->booking_id;
+        
+
+        $laporan->save();
+        return redirect('/laporan');
     }
 
     /**
