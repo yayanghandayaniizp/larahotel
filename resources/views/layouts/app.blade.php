@@ -31,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Pemesanan Hotel</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Lara Hotel</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -39,7 +39,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portofolio</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Profile</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
@@ -56,9 +56,9 @@
     <header class="masthead bg-primary text-white text-center">
       <div class="container">
         <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
-        <h1 class="text-uppercase mb-0">Pemesanan Hotel</h1>
+        <h1 class="text-uppercase mb-0">Lara Hotel</h1>
         <hr class="star-light">
-        <h2 class="font-weight-light mb-0">Web Developer - Graphic Artist - User Experience </h2>
+        <h2 class="font-weight-light mb-0">Situs Booking Kamar Hotel No.1 Di Indonesia </h2>
       </div>
     </header>
 
@@ -104,7 +104,7 @@
             <p class="lead">Booking kamar hotel secara online sekarang juga dan dapatkan promo hotel dan penawaran harga terbaik hari ini. Pesan kamar jauh hari sebelum keberangkatan agar tidak kehabisan. Karena pada suwaktu waktu kamar bisa habis. Apalagi ketika musim liburan. Pesan kamar di LaraHotel dapatkan promo dan penawaran harga terbaik.</p>
           </div>
           <div class="col-lg-4 mr-auto">
-            <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+            <p class="lead">Download Aplikasi Lara Hotel sekarang juga</p>
           </div>
         </div>
         <div class="text-center mt-4">
